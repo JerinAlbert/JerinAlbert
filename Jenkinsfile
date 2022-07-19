@@ -11,7 +11,7 @@ pipeline {
     }
       stage('check for secerets') {
           steps {
-              sudo sh 'docker run gesellix/trufflehog https://github.com/JerinAlbert/JerinAlbert.git > trufflehog'
+              sh 'docker run gesellix/trufflehog https://github.com/JerinAlbert/JerinAlbert.git > trufflehog'
           }
       }
   }
