@@ -11,6 +11,7 @@ pipeline {
     }
       stage('check for secerets') {
           steps {
+              sh 'ssh jenkins@192.168.206.129'
               sh 'docker run gesellix/trufflehog https://github.com/JerinAlbert/JerinAlbert.git > trufflehog'
           }
       }
