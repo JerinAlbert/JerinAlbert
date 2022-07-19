@@ -13,5 +13,6 @@ pipeline {
           steps {
               sh 'docker run gesellix/trufflehog https://github.com/JerinAlbert/JerinAlbert.git > trufflehog'
           }
+      }
   }
 }
