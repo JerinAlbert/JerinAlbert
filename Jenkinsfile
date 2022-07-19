@@ -10,9 +10,6 @@ pipeline {
       }
     }
     
-    stage ('Build') {
-      
-    }
     }
   }
 }
